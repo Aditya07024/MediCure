@@ -1,2 +1,2 @@
-# MediCure
+# TechMedix
  

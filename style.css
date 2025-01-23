@@ -1,0 +1,242 @@
+/* Global styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #f0f4f8, #d8e6f3);
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #e3864c;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    margin: 0;
+}
+
+header .logo p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 12px 25px;
+    border-radius: 25px;
+    background-color: #333;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #793a13;
+    transform: translateY(-5px);
+    width: 120%;
+}
+
+/* Main Content */
+main .cta-container {
+    text-align: center;
+    margin-top: 50px;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out;
+}
+
+main .cta-container h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+main .cta-container p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 15px 0;
+}
+
+main .cta-buttons {
+    margin-top: 20px;
+}
+
+main .cta-buttons .btn-primary {
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    color: white;
+    background-color: #e3864c;
+    border-radius: 25px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+main .cta-buttons .btn-primary:hover {
+    background-color: #e3864c;
+    transform: translateY(-5px);
+}
+
+/* Feature Boxes */
+.features-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.feature-box {
+    width: 30%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.feature-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #e3864c;
+}
+
+.feature-box p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .features-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-box {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    .cta-container {
+        padding: 20px;
+    }
+
+    .cta-buttons .btn-primary {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo h1 {
+        font-size: 2.2rem;
+    }
+
+    .cta-container h2 {
+        font-size: 2rem;
+    }
+
+    .cta-buttons .btn-primary {
+        padding: 10px 20px;
+    }
+
+    .feature-box {
+        width: 100%;
+    }
+}
+
+/* Add this to your existing style.css */
+.auth-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .auth-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .auth-container label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  .auth-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .auth-container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .auth-container button:hover {
+    background-color: #0056b3;
+  }
+  

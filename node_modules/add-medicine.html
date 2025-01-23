@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Medicine - Medics Comparator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-add-medicine">
+    <header class="fade-in">
+        <div class="container">
+            <h1>Add Medicine</h1>
+            <p>Enter the medicine details below</p>
+        </div>
+    </header>
+
+    <main class="container fade-in">
+        <section class="form-container">
+            <form id="addMedicineForm">
+                <input type="text" id="medicineName" placeholder="Medicine Name" required>
+                <input type="text" id="genericName" placeholder="Generic Name" required>
+                <input type="number" id="medicinePrice" placeholder="Price (₹)" required>
+                <input type="url" id="medicineLink" placeholder="Link to Buy Medicine" required>
+                <button type="submit" class="btn-primary">Add Medicine</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Medics Comparator | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

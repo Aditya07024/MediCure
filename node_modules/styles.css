@@ -1,0 +1,271 @@
+/* styles.css
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8fafc;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background-color: #0073e6;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+header button {
+  background-color: #005bb5;
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  background-color: #0073e6;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 1em;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 2em;
+}
+
+h2 {
+  color: #005bb5;
+}
+
+.doctor-list, .test-list {
+  display: flex;
+  gap: 2em;
+}
+
+.doctor-card {
+  border: 1px solid #ccc;
+  padding: 1em;
+  background-color: white;
+  text-align: center;
+}
+
+button {
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  background-color: #005bb5;
+  color: white;
+  padding: 1em;
+} */
+/* Improved Stylesheet for Telemedicine Application */
+
+/* Global Styles */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #f4f8fb;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+  background-color: #0073e6;
+  color: white;
+  padding: 1.5em 1em;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8em;
+}
+
+header button {
+  background-color: #005bb5;
+  color: white;
+  border: none;
+  padding: 0.8em 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+header button:hover {
+  background-color: #004494;
+}
+
+/* Navigation Styles */
+nav ul {
+  display: flex;
+  justify-content: center;
+  background-color: #0073e6;
+  margin: 0;
+  padding: 0.5em 0;
+  list-style: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li {
+  margin: 0 1.5em;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #d4e2f4;
+}
+
+/* Main Content Styles */
+main {
+  padding: 2em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #005bb5;
+  margin-bottom: 1em;
+  font-size: 1.5em;
+}
+
+.doctor-list, .test-list {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+.doctor-card {
+  border: 1px solid #ccc;
+  padding: 1.5em;
+  background-color: white;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.doctor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.doctor-card img {
+  width: 100%;
+  max-width: 120px;
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
+
+doctor-card h3 {
+  margin: 0.5em 0;
+  font-size: 1.2em;
+}
+
+button {
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  padding: 0.8em 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #005bb5;
+}
+
+input[type="text"], select {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.8em;
+  margin: 0.5em 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+/* Pharmacy Locator Styles */
+#pharmacyList {
+  margin-top: 1em;
+  list-style: none;
+  padding: 0;
+}
+
+#pharmacyList li {
+  background: white;
+  margin: 0.5em 0;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Payment Section */
+#paymentOptions {
+  margin-top: 2em;
+}
+
+#paymentMethod {
+  margin-bottom: 1em;
+}
+
+/* Thank You Message */
+#thankYouMessage {
+  text-align: center;
+  padding: 2em;
+  background-color: #e6f7ff;
+  border: 1px solid #b3e5ff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  background-color: #005bb5;
+  color: white;
+  padding: 1em;
+  margin-top: 2em;
+  font-size: 0.9em;
+}
+
+footer p {
+  margin: 0;
+}
+.com {
+  background-color: #f24e4e; /* Light grey background */
+  padding: 3.5px;            /* Some padding */
+  border-radius: 5px;       /* Rounded corners */
+  display: inline-block;    /* Ensure the box fits the content */
+}

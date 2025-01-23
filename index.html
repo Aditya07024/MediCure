@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Telemedicine Application</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Telemedicine Platform</h1>
+    <button id="loginButton">Login</button>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href ="">Home</a></li>
+      <li><a href="#doctorConsultancy">Doctor Consultancy</a></li>
+      <li><a href="#medicalTests">Medical Tests</a></li>
+      <li><a href="#pharmacyLocator">Nearby Pharmacies</a></li>
+      <li><a href="#paymentOptions">Payment</a></li>
+      <li><a href="compare.html" class="com">Compare Medicine</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Doctor Consultancy Section -->
+    <section id="doctorConsultancy">
+      <h2>Consult a Doctor</h2>
+      <div class="doctor-list">
+        <div class="doctor-card">
+          <img src="d1.jpg" alt="Dr. John">
+          <h3>Dr. John</h3>
+          <p>Specialist: Cardiologist</p>
+          <p>Fee: ₹500</p>
+          <button class="book-consultation" data-doctor="Dr. John">Book Now</button>
+        </div>
+        <div class="doctor-card">
+          <img src="d2.jpeg" alt="Dr. Smith">
+          <h3>Dr. Smith</h3>
+          <p>Specialist: Dermatologist</p>
+          <p>Fee: ₹400</p>
+          <button class="book-consultation" data-doctor="Dr. Smith">Book Now</button>
+        </div>
+        <!-- Add more doctors as needed -->
+      </div>
+    </section>
+
+    <!-- Medical Tests Section -->
+    <section id="medicalTests">
+      <h2>Book a Medical Test</h2>
+      <div class="test-list">
+        <button class="book-test" data-test="Blood Test">Blood Test</button>
+        <button class="book-test" data-test="X-Ray">X-Ray</button>
+        <button class="book-test" data-test="MRI">MRI</button>
+      </div>
+    </section>
+
+    <!-- Pharmacy Locator -->
+    <section id="pharmacyLocator">
+      <h2>Find Nearby Pharmacies</h2>
+      <p>Enter your location to find the nearest pharmacies:</p>
+      <input type="text" id="locationInput" placeholder="Enter your location">
+      <button id="findPharmacyButton">Find Pharmacies</button>
+      <ul id="pharmacyList"></ul>
+    </section>
+
+    <!-- Payment Section -->
+    <section id="paymentOptions">
+      <h2>Payment Options</h2>
+      <select id="paymentMethod">
+        <option value="">Choose Payment Method</option>
+        <option value="UPI">UPI</option>
+        <option value="Debit Card">Debit Card</option>
+        <option value="Credit Card">Credit Card</option>
+      </select>
+      <button id="proceedPayment">Pay Now</button>
+    </section>
+
+    <!-- Thank You Section -->
+    <section id="thankYouMessage" style="display: none;">
+      <h2>Thank You!</h2>
+      <p>Your consultation or booking was successful.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Telemedicine Application. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
